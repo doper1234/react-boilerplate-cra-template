@@ -58,6 +58,7 @@
     "publish:github": "cross-env PUBLIC_URL='/react-boilerplate-cra-template' npm run build && gh-pages -d build",
     "changelog": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/scripts/create-changelog.script.ts",
     "release": "standard-version",
+    "normalize": "node ./internals/scripts/purge-typescript.js",
     "publish:npm": "npm run create:npm-package && npm publish .cra-template-rb"
   },
   "lint-staged": {
